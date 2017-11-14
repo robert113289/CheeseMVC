@@ -1,0 +1,7 @@
+﻿<form method="post">
+    @foreach (var cheese in ViewBag.cheeses)
+    {
+    <input type="checkbox" name="Cheese" value="@cheese.Key"> @cheese.Key<br>
+    }
+    <input type="submit"/>
+</form>
